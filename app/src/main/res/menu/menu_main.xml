@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="me.ceo.bitch.appathon.MainActivity">
+    <item android:id="@+id/location_place"
+        android:icon="@drawable/ic_action_place"
+        android:title="@string/location_place"
+        android:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/upload_pic"
+        android:icon="@drawable/ic_action_camera"
+        android:title="@string/upload_pic"
+        android:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/write_review"
+        android:icon="@drawable/ic_action_important"
+        android:title="@string/write_review"
+        android:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"/>
+
+    <item android:id="@+id/action_profile"
+        android:title="@string/action_profile"
+        android:orderInCategory="100"
+        android:showAsAction="never"/>
+
+    <item android:id="@+id/action_place"
+        android:title="@string/action_place"
+        android:orderInCategory="100"
+        android:showAsAction="never"/>
+
+    <item android:id="@+id/sign_out"
+        android:title="@string/sign_out"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/disconnect"
+        android:title="@string/disconnect"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>

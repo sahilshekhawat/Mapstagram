@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip"
+    android:descendantFocusability="blocksDescendants">
+
+    <FrameLayout
+        android:paddingLeft="5dp"
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:requiresFadingEdge="horizontal"
+            android:src="@drawable/default_avatar"/>
+    </FrameLayout>
+
+
+    <!-- Title Of Discussion -->
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/thumbnail"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/thumbnail"
+        android:textColor="#999999"
+        android:textSize="10sp"
+        android:layout_marginTop="1dip"/>
+
+    <!-- Rightend Time of posting -->
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_toRightOf="@id/thumbnail"
+        android:textSize="10sp"
+        android:layout_marginTop="1dip"
+        android:textColor="#999999"
+        android:textStyle="bold" />
+</RelativeLayout>

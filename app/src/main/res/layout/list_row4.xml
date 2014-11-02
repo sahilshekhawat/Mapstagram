@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <!-- Title Of Discussion -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/catergory_default"
+        android:scaleType="center"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="140dp"
+        android:textColor="#ffffff"
+        android:background="#05B8CC"
+        android:padding="5dip"
+        android:typeface="sans"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>

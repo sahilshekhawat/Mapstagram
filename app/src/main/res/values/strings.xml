@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_activity_main"></string>
+    <string name="title_section1">Search</string>
+    <string name="title_section2">Nearby</string>
+    <string name="title_section3">Feed</string>
+    <string name="title_section4">Me</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="sign_out">Sign out</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="title_activity_nav_drawer">NavDrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="location_place">Check In</string>
+    <string name="upload_pic">Upload Picture</string>
+    <string name="write_review">Write Review</string>
+    <string name="title_activity_check_in">Check In</string>
+    <string name="title_activity_upload_picture">Upload a Picture</string>
+    <string name="title_activity_write_review">Write a Review</string>
+    <string name="close_upload_pic">Close</string>
+    <string name="close_check_in">Close</string>
+    <string name="close_write_review">Close</string>
+    <string name="title_activity_place">PlaceActivity</string>
+    <string name="title_activity_person_profile">PersonProfileActivity</string>
+    <string name="action_place">Place</string>
+    <string name="action_profile">Profile</string>
+    <string name="photo">Photo</string>
+    <string name="app_name">Mapstagram</string>
+
+</resources>
