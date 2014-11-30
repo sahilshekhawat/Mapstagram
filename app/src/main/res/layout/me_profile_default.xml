@@ -5,20 +5,20 @@
 
     <ImageView
         android:layout_width="fill_parent"
-        android:layout_height="450dp"
+        android:layout_height="400dp"
         android:id="@+id/profile_pic"
-        android:src="@drawable/profile_pic1"
+        android:src="@drawable/profile_pic"
         android:scaleType="center"/>
 
     <TextView
         android:id="@+id/username"
-        android:text="@string/name"
+        android:text="@string/angel"
         android:textSize="15dp"
-        android:paddingLeft="130dp"
         android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:paddingRight="10dp"
-        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:layout_marginBottom="42dp"
+        android:layout_alignParentBottom="true"
         android:textColor="#000000"
         android:background="@drawable/edit_text_background"
         android:layout_width="fill_parent"
@@ -26,18 +26,18 @@
 
     <LinearLayout
         android:id="@+id/databar"
-        android:layout_marginTop="423dp"
         android:padding="15dp"
         android:background="@drawable/edit_text_background"
         android:text="@string/hello_world"
         android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
         android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"
-            android:paddingRight="15dp">
+            android:paddingRight="10dp">
 
             <TextView
                 android:id="@+id/reviews"
@@ -50,7 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/reviews"
-                android:text="0"/>
+                android:text=" 3"/>
 
         </LinearLayout>
 
@@ -61,14 +61,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp">
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
             <TextView
                 android:id="@+id/followers"
                 android:text="@string/followers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
+            <TextView
+                android:id="@+id/numfollowers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/followers"
+                android:text=" 2"/>
         </LinearLayout>
 
 
@@ -77,8 +83,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp">
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
 
             <TextView
                 android:id="@+id/photos"
@@ -87,6 +93,13 @@
                 android:layout_height="wrap_content" />
 
 
+            <TextView
+                android:id="@+id/numphotos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/photos"
+                android:text=" 9"/>
+
         </LinearLayout>
 
 
@@ -94,8 +107,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp">
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
 
             <TextView
                 android:id="@+id/places"
@@ -103,20 +116,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
+            <TextView
+                android:id="@+id/numplaces"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/places"
+                android:text=" 0"/>
+
         </LinearLayout>
-
-
-
     </LinearLayout>
-
-    <Button
-        android:id="@+id/follow"
-        android:text="Follow"
-        android:textColor="#ffffff"
-        android:textSize="20dp"
-        android:layout_alignParentBottom="true"
-        android:background="@color/orange"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
 
 </RelativeLayout>

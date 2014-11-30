@@ -5,6 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 
 public class PersonProfileActivity extends Activity {
@@ -13,7 +16,18 @@ public class PersonProfileActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_person_profile);
+
+        Button button = (Button) findViewById(R.id.follow);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(PersonProfileActivity.this,"You are following Kareena Kapoor"
+                        , Toast.LENGTH_SHORT).show();
+            }
+        });
     }
+
+
 
     public boolean startSettingActivity(){
         Intent intent = new Intent(this, SettingsActivity.class);

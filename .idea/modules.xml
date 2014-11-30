@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Appathon.iml" filepath="$PROJECT_DIR$/Appathon.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crouton/crouton.iml" filepath="$PROJECT_DIR$/crouton/crouton.iml" />
     </modules>
   </component>
 </project>

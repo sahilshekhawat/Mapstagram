@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class PlaceActivity extends Activity {
@@ -13,6 +15,15 @@ public class PlaceActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_place);
+
+        Button button = (Button)findViewById(R.id.map);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PlaceActivity.this, MapsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public boolean startSettingActivity(){

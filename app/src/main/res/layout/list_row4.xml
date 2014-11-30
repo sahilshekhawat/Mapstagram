@@ -6,6 +6,7 @@
 
     <!-- Title Of Discussion -->
     <ImageView
+        android:id="@+id/catimage"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:src="@drawable/catergory_default"
@@ -13,18 +14,17 @@
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="wrap_content"
+        android:text="@string/hello_world"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="80dp"
-        android:layout_marginLeft="140dp"
+        android:layout_marginTop="164dp"
+        android:gravity="center"
         android:textColor="#ffffff"
-        android:background="#05B8CC"
-        android:padding="5dip"
+        android:background="@color/orange"
+        android:padding="10dip"
         android:typeface="sans"
         android:textSize="15sp"
         android:textStyle="bold" />
-
 
 
 

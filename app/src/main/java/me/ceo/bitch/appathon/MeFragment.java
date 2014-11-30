@@ -73,33 +73,24 @@ public class MeFragment extends Fragment implements AbsListView.OnItemClickListe
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        feedListItemList = new ArrayList();
+/*        feedListItemList = new ArrayList();
         feedListItemList.add(new MeListItem("Title 1"));
         feedListItemList.add(new MeListItem("Title 2"));
         feedListItemList.add(new MeListItem("Title 3"));
-        mAdapter = new MeListAdapter(getActivity(), feedListItemList);
-/*
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-
-        // TODO: Change Adapter to display your content
-        mAdapter = new ArrayAdapter<DummyContent.DummyItem>(getActivity(),
-                android.R.layout.simple_list_item_1, android.R.id.text1, DummyContent.ITEMS);*/
+        mAdapter = new MeListAdapter(getActivity(), feedListItemList);*/
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_me, container, false);
+        View view = inflater.inflate(R.layout.me_profile_default, container, false);
 
-        // Set the adapter
+/*        // Set the adapter
         mListView = (AbsListView) view.findViewById(android.R.id.list);
         mListView.setAdapter(mAdapter);
 
         // Set OnItemClickListener so we can be notified on item clicks
-        mListView.setOnItemClickListener(this);
+        mListView.setOnItemClickListener(this);*/
 
         return view;
     }

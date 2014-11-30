@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -16,6 +17,7 @@ import java.util.List;
 public class SearchListAdapter extends ArrayAdapter{
     private Context context;
     private boolean useList = true;
+    private final ImageDownloader imageDownloader = new ImageDownloader();
 
     public SearchListAdapter(Context context, List items) {
         super(context, android.R.layout.simple_list_item_1, items);
@@ -24,6 +26,7 @@ public class SearchListAdapter extends ArrayAdapter{
 
     private class ViewHolder{
         TextView titleText;
+        ImageView image;
     }
 
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -44,6 +47,8 @@ public class SearchListAdapter extends ArrayAdapter{
             viewToUse = convertView;
             holder = (ViewHolder) viewToUse.getTag();
         }
+        holder.image = (ImageView)viewToUse.findViewById(R.id.catimage);
+        imageDownloader.download(fragmentItemListItem.getImageurl(), holder.image);
         holder.titleText.setText(fragmentItemListItem.getItemTitle()); return viewToUse;
     }
 }

@@ -23,11 +23,19 @@
     <string name="close_upload_pic">Close</string>
     <string name="close_check_in">Close</string>
     <string name="close_write_review">Close</string>
-    <string name="title_activity_place">PlaceActivity</string>
-    <string name="title_activity_person_profile">PersonProfileActivity</string>
+    <string name="title_activity_place">Place</string>
+    <string name="title_activity_person_profile">Profile</string>
     <string name="action_place">Place</string>
     <string name="action_profile">Profile</string>
     <string name="photo">Photo</string>
     <string name="app_name">Mapstagram</string>
+    <string name="angel">Katrina Kaif </string>
+    <string name="reviews">Reviews</string>
+    <string name="followers">Followers</string>
+    <string name="photos">Photos</string>
+    <string name="places">Places</string>
+    <string name="name">Kareena Kapoor</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="place_name">Palika Bazaar</string>
 
 </resources>

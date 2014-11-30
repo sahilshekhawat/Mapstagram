@@ -40,7 +40,7 @@ public class SearchFragment extends Fragment implements AbsListView.OnItemClickL
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
-
+    private String url = "http://appathon-160641.apse1.nitrousbox.com/";
     /**
      * The fragment's ListView/GridView.
      */
@@ -74,9 +74,11 @@ public class SearchFragment extends Fragment implements AbsListView.OnItemClickL
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         feedListItemList = new ArrayList();
-        feedListItemList.add(new SearchListItem("Title 1"));
-        feedListItemList.add(new SearchListItem("Title 2"));
-        feedListItemList.add(new SearchListItem("Title 3"));
+        feedListItemList.add(new SearchListItem("Arts and Handicrafts", url + "assets/ah.jpg"));
+        feedListItemList.add(new SearchListItem("Mouth Watering", url + "assets/product5_big.jpg"));
+        feedListItemList.add(new SearchListItem("Forbidden Fruit", url +  "assets/product8_big.jpg"));
+        feedListItemList.add(new SearchListItem("Take My Money", url +  "assets/shutup.jpg"));
+        feedListItemList.add(new SearchListItem("Nirvana", url +  "assets/nirvana.jpg"));
         mAdapter = new SearchListAdapter(getActivity(), feedListItemList);
     }
 
